@@ -1,0 +1,117 @@
+#loader{
+  width: 57px;
+  height: 57px;
+  margin: 100px auto;
+  overflow: hidden;
+  border-radius: 100%;
+  background-color: #fff;
+  animation: loader 4800ms infinite;
+}
+
+.anim{
+  width: 37px;
+  height: 37px;
+  margin: 10px;
+  animation: anim 800ms infinite;
+}
+
+.anim img{
+  position: absolute;
+  top: 0;
+}
+
+    .anim img:first-child { animation: text 4800ms infinite; }
+    .anim img:nth-child(2){ animation: photo 4800ms infinite; }
+    .anim img:nth-child(3){ animation: quote 4800ms infinite; }
+    .anim img:nth-child(4){ animation: link 4800ms infinite; }
+    .anim img:nth-child(5){ animation: tchat 4800ms infinite; }
+    .anim img:nth-child(6){ animation: camera 4800ms infinite; }
+    .anim img:nth-child(7){ animation: audio 4800ms infinite; }
+
+
+@keyframes text {
+  0%     { opacity: 1 }
+  16.6%  { opacity: 0 }
+  33.33% { opacity: 0 }
+  49.8%  { opacity: 0 }
+  66.40% { opacity: 0 }
+  83%    { opacity: 0 }
+  100%   { opacity: 0 }
+}
+
+@keyframes photo {
+  0%     { opacity: 0 }
+  16.6%  { opacity: 1 }
+  33.33% { opacity: 0 }
+  49.8%  { opacity: 0 }
+  66.40% { opacity: 0 }
+  83%    { opacity: 0 }
+  100%   { opacity: 0 }
+}
+
+@keyframes quote {
+  0%     { opacity: 0 }
+  16.6%  { opacity: 0 }
+  33.33% { opacity: 1 }
+  49.8%  { opacity: 0 }
+  66.40% { opacity: 0 }
+  83%    { opacity: 0 }
+  100%   { opacity: 0 }
+}
+
+@keyframes link {
+  0%     { opacity: 0 }
+  16.6%  { opacity: 0 }
+  33.33% { opacity: 0 }
+  49.8%  { opacity: 1 }
+  66.40% { opacity: 0 }
+  83%    { opacity: 0 }
+  100%   { opacity: 0 }
+}
+
+@keyframes tchat {
+  0%     { opacity: 0 }
+  16.6%  { opacity: 0 }
+  33.33% { opacity: 0 }
+  49.8%  { opacity: 0 }
+  66.40% { opacity: 1 }
+  83%    { opacity: 0 }
+  100%   { opacity: 0 }
+}
+
+@keyframes camera {
+  0%     { opacity: 0 }
+  16.6%  { opacity: 0 }
+  33.33% { opacity: 0 }
+  49.8%  { opacity: 0 }
+  66.40% { opacity: 0 }
+  83%    { opacity: 1 }
+  100%   { opacity: 0 }
+}
+
+@keyframes audio {
+  0%     { opacity: 0 }
+  16.6%  { opacity: 0 }
+  33.33% { opacity: 0 }
+  49.8%  { opacity: 0 }
+  66.40% { opacity: 0 }
+  83%    { opacity: 0 }
+  100%   { opacity: 1 }
+}
+
+
+@keyframes anim {
+  from { transform: rotate(0deg);   }
+  to   { transform: rotate(360deg); }
+}
+
+
+@keyframes loader {
+  0%     {  background-color: #ffffff; }
+  16.6%  {  background-color: #d86043; }
+  33.33% {  background-color: #f0951f; }
+  49.8%  {  background-color: #44b57d; }
+  66.4%  {  background-color: #3a9fd3; }
+  83%    {  background-color: #687480; }
+  100%   {  background-color: #ffffff; }
+}

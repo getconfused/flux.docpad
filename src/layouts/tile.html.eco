@@ -1,0 +1,30 @@
+<article class="tile <%= @document.network %>" data-link="<%= @document.link %>" data-network="<%= @document.network %>" data-action="<%= @document.action %>">	
+
+	<div class="content">
+		<div>
+			<% if @document.network == 'youtube': %>
+			<a href="#" class="flux-icon icon_play-window">&nbsp;</a>
+			<% else if @document.network == 'twitter': %>
+			<a href="#" class="flux-icon icon_retweet">&nbsp;</a>
+			<% else: %>
+			<a href="#" class="flux-icon icon_window">&nbsp;</a>				
+			<% end %>
+			<h3><%= @document.social %></h3>
+		</div>
+	</div>
+
+	<% if @document.network != 'twitter': %>
+		<div class="imgLiquidFill">
+			<img data-src="<%= @document.image %>" src="img/b.gif" href="<%= @document.image %>" class="image"/>
+		</div>
+	<% end %>
+
+	<div class="infos bgGrad">
+		<div>
+			<i class="flux-icon icon_<%= @document.network %>"></i> 
+			<h2 class="title"><%= @document.title %></h2>
+			<p class="formatDate" data-date=""><%= @moment(@document.date).fromNow(); %></p>
+		</div>
+	</div>
+
+</article>

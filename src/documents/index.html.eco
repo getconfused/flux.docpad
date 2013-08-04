@@ -1,0 +1,13 @@
+---
+layout: 'default'
+title: 'Home'
+---
+
+<div class="container scrollable">
+	<div id="grid" class="grid ">
+		<% for document in @getCollection('tiles').toJSON(): %>
+		    <%- document.contentRendered %>
+		<% end %>
+	</div>
+</div> 
+ 
